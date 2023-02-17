@@ -22,6 +22,11 @@
     color: var(--white);
 }
 
+.menu__item_active a {
+    text-shadow: 1px 1px 2px var(--pink);
+    color: #f7ff00;
+}
+
 @media only screen and (max-width: 1300px) {
 
     .menu__item {
