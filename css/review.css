@@ -1,0 +1,27 @@
+@import "colors.css";
+
+.review {
+    padding-bottom: 100px;
+}
+
+.review__username {
+    font-family: "JetBrains Mono", serif;
+    font-size: 30px;
+    color: var(--peach);
+    padding-bottom: 10px;
+}
+
+.review__text {
+    font-family: "JetBrains Mono", serif;
+    color: var(--white);
+    max-width: 600px;
+    font-size: 25px;
+}
+
+.review:nth-child(even) {
+    padding-left: 40%;
+}
+
+.review__username {
+    background-color: var(--red);
+}
