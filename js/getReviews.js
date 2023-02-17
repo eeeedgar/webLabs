@@ -4,14 +4,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 async function showReviews() {
-    let reviews = await getReviews();
-    console.log(reviews);
+    try {
+        let reviews = await getReviews();
+        console.log(reviews);
 
-    for (let i = 0; i < reviews.length; i++) {
-        createReview(reviews[i]);
+        for (let i = 0; i < reviews.length; i++) {
+            createReview(reviews[i]);
+        }
+    } catch (e) {
+        showError();
     }
-
-    // document.getElementsByClassName('reviews')[0];
 }
 
 function getReviews() {
@@ -38,4 +40,8 @@ function createReview(data) {
     review.appendChild(text);
 
     reviews.appendChild(review);
+}
+
+function showError() {
+    iziToast.error({title: 'Ошибка', message: 'Невозможно загрузить комментарии'});
 }

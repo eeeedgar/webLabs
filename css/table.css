@@ -19,6 +19,7 @@ th, td {
 
 th {
     height: 50px;
+    color: var(--peach);
 }
 
 td {

@@ -2,17 +2,17 @@
 
 .menu {
     padding-top: 10px;
-    padding-right: 50px;
-    padding-left: 50px;
+    padding-right: 30px;
+    padding-left: 30px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 1000px;
+    width: 1200px;
 }
 
 .menu__item {
     display: inline-block;
-    width: 200px;
+    min-width: 200px;
     font-size: 20px;
     font-family: "JetBrains Mono", serif;
     font-weight: bold;
@@ -30,8 +30,8 @@
 @media only screen and (max-width: 1300px) {
 
     .menu__item {
-        width: 80px;
         font-size: 15px;
+        min-width: 100px;
     }
 
     .menu {

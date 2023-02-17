@@ -1,0 +1,23 @@
+@import "colors.css";
+
+.user-form {
+    margin-bottom: 50px;
+    background-color: var(--red);
+    max-width: 500px;
+    min-width: 300px;
+    margin-right: 30px;
+    padding: 10px;
+}
+
+.user-form__creation-date {
+    font-size: 25px;
+    font-family: "JetBrains Mono", serif;
+    color: var(--peach);
+}
+
+.user-form__data {
+    font-size: 22px;
+    font-family: "JetBrains Mono", serif;
+    color: var(--white);
+}
+

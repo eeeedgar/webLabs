@@ -5,6 +5,8 @@
   <title>Title</title>
   <link rel="stylesheet" href="css/index.css">
   <script src="js/general.js"></script>
+  <script src="js/iziToast.min.js"></script>
+  <script src="js/signUp.js"></script>
 </head>
 <header>
   <div class="menu">
@@ -19,6 +21,9 @@
     </div>
     <div class="menu__item">
       <a href="sign-up.html">Записаться</a>
+    </div>
+    <div class="menu__item">
+      <a href="forms.html">Посмотреть заявки</a>
     </div>
 
   </div>
@@ -52,7 +57,7 @@
         <label for="date">Дата и время записи: </label>
         <input type="datetime-local" name="date" id="date" required>
       </div>
-      <button class="form__button" role="button">Записаться на осмотр</button>
+      <button class="form__button" role="button" onclick="signUp()">Записаться на осмотр</button>
     </div>
   </div>
 </div>
