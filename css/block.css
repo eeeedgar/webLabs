@@ -1,0 +1,50 @@
+@import "colors.css";
+
+.block {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.block__details {
+    width: 40%;
+}
+
+.block__title {
+    color: var(--white);
+    font-family: "JetBrains Mono", serif;
+}
+
+.block__text {
+    float: left;
+
+    color: var(--white);
+    font-family: "JetBrains Mono", serif;
+}
+
+.block__image {
+    float: right;
+    width: 500px;
+}
+
+@media only screen and (max-width: 1300px) {
+
+    .block__details {
+        float: none;
+        width: 100%;
+    }
+
+    .block__image {
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 400px;
+    }
+
+    .block__image img {
+
+        width: 500px;
+    }
+}
