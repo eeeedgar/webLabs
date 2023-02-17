@@ -1,0 +1,17 @@
+@import "colors.css";
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--black);
+}
+
+a:active {
+    text-decoration: underline;
+}

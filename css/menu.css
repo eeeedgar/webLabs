@@ -1,0 +1,30 @@
+@import "colors.css";
+
+.menu {
+    padding-top: 10px;
+    padding-right: 50px;
+    padding-left: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+}
+
+.menu__item {
+    display: inline-block;
+    width: 300px;
+    font-size: 20px;
+    font-family: "JetBrains Mono", serif;
+    font-weight: bold;
+}
+
+.menu__item a {
+    color: var(--white);
+}
+
+@media only screen and (max-width: 1300px) {
+
+    .menu__item {
+        width: 100px;
+    }
+}
