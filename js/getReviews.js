@@ -9,8 +9,12 @@ async function showReviews() {
         console.log(reviews);
         removeRing();
 
-        for (let i = 0; i < reviews.length; i++) {
-            createReview(reviews[i]);
+        if (reviews.length === 0) {
+            showError();
+        } else {
+            for (let i = 0; i < reviews.length; i++) {
+                createReview(reviews[i]);
+            }
         }
     } catch (e) {
         showError();
@@ -21,8 +25,14 @@ function delay(time) {
     return new Promise(resolve => setTimeout(resolve, time));
 }
 
+function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+}
+
 function getReviews() {
-    return delay(1000).then(() => fetch('https://jsonplaceholder.typicode.com/comments?postId=1')
+    let n = getRandomInt(20) - 8;
+    console.log(n);
+    return delay(1000).then(() => fetch('https://jsonplaceholder.typicode.com/comments?postId=' + n)
         .then((response) => response.json())
         .then((json) => json));
 }
