@@ -1,0 +1,12 @@
+.data {
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.data p {
+    color: var(--white);
+    padding-top: 30px;
+    font-family: "JetBrains Mono", serif;
+}

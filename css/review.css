@@ -1,0 +1,42 @@
+@import "colors.css";
+
+.review {
+    margin-bottom: 100px;
+}
+
+.review__username {
+    font-family: "JetBrains Mono", serif;
+    font-size: 24px;
+    color: var(--peach);
+    padding-bottom: 10px;
+}
+
+.review__text {
+    font-family: "JetBrains Mono", serif;
+    color: var(--white);
+    max-width: 600px;
+    font-size: 20px;
+}
+
+.review:nth-child(odd) {
+    padding-left: 40%;
+}
+
+.review__username {
+    background-color: var(--red);
+}
+
+@media only screen and (max-width: 1300px) {
+
+    .review__username {
+        font-size: 20px;
+    }
+
+    .review__text {
+        font-size: 18px;
+    }
+
+    .review:nth-child(even) {
+        padding-left: 0;
+    }
+}

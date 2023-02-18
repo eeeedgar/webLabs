@@ -1,0 +1,62 @@
+@import "colors.css";
+
+.menu {
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+}
+
+.menu__item {
+    display: inline-block;
+    min-width: 200px;
+    font-size: 20px;
+    font-family: "JetBrains Mono", serif;
+    font-weight: bold;
+}
+
+.menu__item a {
+    color: var(--white);
+}
+
+.menu__item_active a {
+    text-shadow: 1px 1px 2px var(--pink);
+    color: #f7ff00;
+}
+
+@media only screen and (max-width: 1300px) {
+
+    .menu__item {
+        font-size: 15px;
+        min-width: 150px;
+    }
+
+    .menu {
+        padding-top: 15px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    .menu__item {
+        font-size: 15px;
+        min-width: 200px;
+        /*margin-left: 20px;*/
+        /*margin-right: 20px;*/
+    }
+
+    .menu {
+        margin-left: 20px;
+        margin-right: 20px;
+        max-width: 600px;
+        height: 100px;
+        padding-left: 0;
+        padding-right: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+}

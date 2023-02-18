@@ -1,0 +1,7 @@
+@import "colors.css";
+
+body {
+    background-color: var(--black);
+    margin: 100px 0 0;
+    height: 100%;
+}

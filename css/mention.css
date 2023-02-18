@@ -1,0 +1,13 @@
+@import "colors.css";
+
+.mention {
+    background-color: var(--black);
+    font-family: "kamikaze", serif;
+    padding: 20px;
+    text-align: end;
+}
+
+.mention__name {
+    font-size: 20px;
+    color: var(--pink);
+}

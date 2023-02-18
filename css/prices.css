@@ -1,0 +1,15 @@
+@import "colors.css";
+
+.prices {
+    color: var(--white);
+    font-size: 20px;
+    font-family: "JetBrains Mono", serif;
+}
+
+@media only screen and (max-width: 1300px) {
+
+    .prices {
+        font-size: 15px;
+    }
+}
+

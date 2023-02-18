@@ -1,0 +1,14 @@
+:root {
+    --black: #2B2D42;
+    --dark-grey: #4d5d5f;
+    --grey: #8D99AE;
+    --white: #f7f8f9;
+    --peach: #fbd4d4;
+    --pink: #EF233C;
+    --red: #800020;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+}
