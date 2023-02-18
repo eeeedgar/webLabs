@@ -33,7 +33,7 @@
 <div class="gallery">
   <div class="data">
     <p id="load-time"></p>
-    <div class="form">
+    <form class="form">
       <div class="form__field">
         <label for="name">Ваше имя: </label>
         <input type="text" name="name" id="name" required>
@@ -58,8 +58,8 @@
         <label for="date">Дата и время записи: </label>
         <input type="datetime-local" name="date" id="date" required>
       </div>
-      <button class="form__button" role="button" onclick="signUp()">Записаться на осмотр</button>
-    </div>
+      <button type="submit" class="form__button" role="button" onclick="signUp()">Записаться на осмотр</button>
+    </form>
   </div>
 </div>
 <div class="mention">

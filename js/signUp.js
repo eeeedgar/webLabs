@@ -1,10 +1,40 @@
 function signUp() {
     let name = document.getElementById('name').value;
+    if (name === '') {
+        console.log(name);
+        iziToast.error({title: 'Ошибка', message: 'Введите корректные данные'});
+        return;
+    }
     let email = document.getElementById('email').value;
+    if (email === '' || !email.includes('@')) {
+        console.log(email);
+        iziToast.error({title: 'Ошибка', message: 'Введите корректные данные'});
+        return;
+    }
     let brand = document.getElementById('brand').value;
+    if (brand === '') {
+        console.log(brand);
+        iziToast.error({title: 'Ошибка', message: 'Введите корректные данные'});
+        return;
+    }
     let model = document.getElementById('model').value;
+    if (model === '') {
+        console.log(model);
+        iziToast.error({title: 'Ошибка', message: 'Введите корректные данные'});
+        return;
+    }
     let service = document.getElementById('service').value;
+    if (service === '') {
+        console.log(service);
+        iziToast.error({title: 'Ошибка', message: 'Введите корректные данные'});
+        return;
+    }
     let date = document.getElementById('date').value;
+    if (date === '') {
+        console.log(date);
+        iziToast.error({title: 'Ошибка', message: 'Введите корректные данные'});
+        return;
+    }
 
     let form = new Form(name, email, brand, model, service, date);
 
