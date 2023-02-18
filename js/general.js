@@ -16,17 +16,22 @@ function showActiveMenuItem() {
 
     console.log(document.location.pathname);
 
-    for (let i = 0; i < menuItems.length; i++) {
-        try {
-            let hr = menuItems[i].getElementsByTagName("a")[0].getAttribute("href");
-            console.log(hr);
-            console.log(document.location.pathname.endsWith(hr));
+    if (document.location.pathname.endsWith('/')) {
+        menuItems[0].classList.add('menu__item_active');
+    } else {
 
-            if (document.location.pathname.endsWith(hr)) {
-                menuItems[i].classList.add("menu__item_active");
+        for (let i = 0; i < menuItems.length; i++) {
+            try {
+                let hr = menuItems[i].getElementsByTagName("a")[0].getAttribute("href");
+                console.log(hr);
+                console.log(document.location.pathname.endsWith(hr));
+
+                if (document.location.pathname.endsWith(hr)) {
+                    menuItems[i].classList.add("menu__item_active");
+                }
+            } catch (e) {
+                console.log(e);
             }
-        } catch (e) {
-            console.log(e);
         }
     }
 }
