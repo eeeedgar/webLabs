@@ -45,8 +45,6 @@ function signUp() {
     forms.push(form);
 
     localStorage.setItem('forms', JSON.stringify(forms));
-
-    iziToast.info({title: 'Сохранено!', message: 'Заявка отправлена'});
 }
 
 class Form {
