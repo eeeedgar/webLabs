@@ -27,3 +27,15 @@ td {
     font-weight: lighter;
     height: 40px;
 }
+
+tr th:last-child {
+    text-align: end;
+    width: 100px;
+    padding-right: 20px;
+}
+
+tr td:last-child {
+    text-align: end;
+    width: 100px;
+    padding-right: 20px;
+}
