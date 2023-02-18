@@ -7,6 +7,7 @@ async function showReviews() {
     try {
         let reviews = await getReviews();
         console.log(reviews);
+        removeRing();
 
         for (let i = 0; i < reviews.length; i++) {
             createReview(reviews[i]);
@@ -16,10 +17,18 @@ async function showReviews() {
     }
 }
 
+function delay(time) {
+    return new Promise(resolve => setTimeout(resolve, time));
+}
+
 function getReviews() {
-    return fetch('https://jsonplaceholder.typicode.com/comments?postId=1')
+    return delay(1000).then(() => fetch('https://jsonplaceholder.typicode.com/comments?postId=1')
         .then((response) => response.json())
-        .then((json) => json);
+        .then((json) => json));
+}
+
+function removeRing() {
+    document.getElementsByClassName('lds-ring')[0].remove();
 }
 
 function createReview(data) {
