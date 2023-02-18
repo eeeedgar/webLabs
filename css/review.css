@@ -18,7 +18,7 @@
     font-size: 20px;
 }
 
-.review:nth-child(even) {
+.review:nth-child(odd) {
     padding-left: 40%;
 }
 
