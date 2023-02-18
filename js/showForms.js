@@ -53,5 +53,5 @@ function getReadableString(d) {
         hours = '0' + hours;
     }
 
-    return d.getDay() + '/' + d.getMonth() + ' ' + hours + ':' + minutes;
+    return d.getDate() + '/' + (d.getMonth() + 1) + ' ' + hours + ':' + minutes;
 }

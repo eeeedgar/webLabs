@@ -22,7 +22,7 @@ function signUp() {
 class Form {
     constructor(name, email, brand, model, service, date) {
         this.id = uuidv4();
-        this.creationDate = Date.now();
+        this.creationDate = new Date(Date.now());
         this.name = name;
         this.email = email;
         this.brand = brand;
